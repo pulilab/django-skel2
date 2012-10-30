@@ -1,0 +1,6 @@
+#!/bin/bash
+
+DIR="$( cd -P "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+cd $DIR/..
+DJANGO_SETTINGS_MODULE=settings_local python manage.py test $@
