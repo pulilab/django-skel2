@@ -6,6 +6,17 @@ This is a collection of useful templates for django-powered projects. Inspired b
 ## How it works ##
 We have several branches and each one of them can be used as a template. Here they are:
 
+### puli template ###
+
+You'll get the recommended project template to be used for Puli projects
+
+In order to use this template, you need to:
+```bash
+django-admin.py startproject --template https://github.com/pulilab/django-skel2/zipball/pulilab --extension py,md,ini YOUR_PROJECT_NAME
+cd YOUR_PROJECT_NAME
+python manage.py syncdb
+```
+
 ### simple template ###
 You'll get just a django project with some useful things such as:
 * nice settings.py (with PROJECT_DIR and some other stuff)
