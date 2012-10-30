@@ -3,6 +3,8 @@ from settings_common import *
 DEBUG = True
 TEMPLATE_DEBUG = True
 POST_MORTEM = True
+FILER_DEBUG = True
+FILER_ENABLE_LOGGING = True
 
 CACHES = {
     'default': {

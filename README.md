@@ -26,7 +26,7 @@ source bin/activate
 Obtain the url to your git repository.
 
 ```bash
-git clone <URL_TO_GIT_RESPOSITORY> {{ project_name }}
+git clone <URL_TO_GIT_REPOSITORY> {{ project_name }}
 ```
 
 ### Install requirements ###
@@ -35,14 +35,29 @@ cd {{ project_name }}
 pip install -r requirements.txt
 ```
 
+There are two additional requirement files:
+
+* requirements-dev
+	provides the packages needed for development run
+* requirements-production
+	provides the packages needed for production installation
+
 ### Configure project ###
+
+We have three settings files:
+
+We have a `{{ project_name }}/settings_common.py` file contains most of the settings. The `settings.py` and `settings_local.py` files extend `settings_common.py`
+
 ```bash
 vi {{ project_name }}/settings_local.py
 ```
 
 ### Sync database ###
+
+South is installed, use it!
+
 ```bash
-python manage.py syncdb
+python manage.py syncdb --migrate --noinput
 ```
 
 ## Running ##
