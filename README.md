@@ -57,7 +57,7 @@ vi {{ project_name }}/settings_local.py
 South is installed, use it!
 
 ```bash
-python manage.py syncdb --migrate --noinput
+python manage.py syncdb --migrate
 ```
 
 ## Running ##
