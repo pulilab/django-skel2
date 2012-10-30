@@ -42,6 +42,7 @@ nosetests.xml
 .project
 .settings
 atlassian-ide-plugin.xml
+*.sublime-workspace
 
 # some paths 
 settings_local.py

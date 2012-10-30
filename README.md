@@ -35,7 +35,7 @@ cd {{ project_name }}
 pip install -r requirements.txt
 ```
 
-There are two additional requirement files:
+There are two additional requirement files that you might want to install as well:
 
 * requirements-dev
 	provides the packages needed for development run
