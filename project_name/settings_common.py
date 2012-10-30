@@ -157,8 +157,10 @@ INSTALLED_APPS = (
 
     # 'django.contrib.humanize',
 
+    'storages',
     'south',
-    "hilbert",
+    'hilbert',
+    'filer',
 )
 
 # A sample logging configuration. The only tangible logging

@@ -5,6 +5,24 @@
 - pip
 - virtualenv/wrapper (optional)
 
+## Features ##
+
+The following apps are included by default:
+
+* django storages
+* south
+* django hilbert
+
+If you install the development packages, development requires:
+
+* django extensions
+* django nose
+* django pdb
+
+### SSL settings ###
+
+Be default ssl is enabled, and set to be forced for the admin site.
+
 ## Installation ##
 ### Creating the environment ###
 Create a virtual python enviroment for the project.
