@@ -3,6 +3,7 @@ django>=1.4
 South==0.7.4
 django-storages
 python-cloudfiles
+raven
 
 # admin
 # django-admin-tools==0.4.1
