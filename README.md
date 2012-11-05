@@ -12,6 +12,7 @@ The following apps are included by default:
 * django storages
 * south
 * django hilbert
+* raven
 
 If you install the development packages, development requires:
 
@@ -60,7 +61,7 @@ There are two additional requirement files that you might want to install as wel
 * requirements-production
 	provides the packages needed for production installation
 
-### Configure project ###
+## Configure project ##
 
 We have three settings files:
 
@@ -70,7 +71,7 @@ We have a `{{ project_name }}/settings_common.py` file contains most of the sett
 vi {{ project_name }}/settings_local.py
 ```
 
-### Sync database ###
+## Sync database ##
 
 South is installed, use it!
 
@@ -84,3 +85,18 @@ python manage.py runserver
 ```
 
 Open browser to http://127.0.0.1:8000
+
+## Deployment ##
+
+The project contains a fabfile. You might want to review it and you should definitely set it up correctly. The most important commands are the following:
+
+staging
+	loads staging environment
+productions
+	loads production environment
+test
+	runs your specified tests
+prepare_deploy
+	runs the tests and commits/pushes on success
+deploy
+	check out a remote copy, and restarts the server
