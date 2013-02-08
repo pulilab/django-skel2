@@ -5,6 +5,7 @@ django-storages
 python-cloudfiles
 raven
 django-hilbert
+django-model-utils
 
 # admin
 # django-admin-tools==0.4.1
