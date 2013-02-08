@@ -4,6 +4,7 @@ South==0.7.4
 django-storages
 python-cloudfiles
 raven
+django-hilbert
 
 # admin
 # django-admin-tools==0.4.1
