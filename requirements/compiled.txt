@@ -1,0 +1,30 @@
+#MySQL-python
+psycopg2
+
+py-bcrypt
+-e git://github.com/fwenzel/django-sha2.git#egg=django-sha2
+
+-e git://github.com/jsocol/commonware.git#egg=commonware
+-e git://github.com/mozilla/nuggets.git#egg=nuggets
+
+django==1.5.1
+django-registration
+south
+
+django-sekizai
+djangorestframework
+django_compressor
+django-model-utils
+
+# django-cumulus - why not just?
+# -e git://github.com/pulilab/django-cumulus.git#egg=django-cumulus
+
+# Celery related
+#billiard
+#celery
+#kombu
+#django-celery
+#django-redis
+
+#GitPython==0.1.7
+

@@ -1,3 +1,0 @@
-django-debug-toolbar
-django-pdb
-django-nose
