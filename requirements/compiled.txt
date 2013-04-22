@@ -25,4 +25,3 @@ django-model-utils
 #django-redis
 
 #GitPython==0.1.7
-
