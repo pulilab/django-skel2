@@ -1,4 +1,4 @@
-from settings_common import *
+import base
 
 DEBUG = True
 TEMPLATE_DEBUG = True
@@ -14,13 +14,13 @@ CACHES = {
 
 SSL_ENABLED = False
 
-INSTALLED_APPS = INSTALLED_APPS + (
+INSTALLED_APPS = base.INSTALLED_APPS + (
     "django_pdb",
     "debug_toolbar",
     "django_nose",
 )
 
-MIDDLEWARE_CLASSES = MIDDLEWARE_CLASSES + (
+MIDDLEWARE_CLASSES = base.MIDDLEWARE_CLASSES + (
     'debug_toolbar.middleware.DebugToolbarMiddleware',
     'django_pdb.middleware.PdbMiddleware',
 )

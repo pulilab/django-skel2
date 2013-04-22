@@ -117,7 +117,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'hilbert.middleware.SSLRedirectMiddleware',
+    # 'hilbert.middleware.SSLRedirectMiddleware',
 )
 
 ROOT_URLCONF = '{{ project_name }}.urls'
@@ -142,10 +142,6 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.request',
 )
 
-FIXTURE_DIRS = (
-    os.path.join(PROJECT_DIR, 'fixtures'),
-)
-
 INSTALLED_APPS = (
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -157,8 +153,7 @@ INSTALLED_APPS = (
 
     # 'django.contrib.humanize',
 
-    'storages',
     'south',
-    'hilbert',
-    'filer',
+    #'hilbert',
+    #'filer',
 )

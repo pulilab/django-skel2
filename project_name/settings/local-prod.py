@@ -1,6 +1,6 @@
-from settings_common import *
+import base
 
-INSTALLED_APPS = INSTALLED_APPS + (
+INSTALLED_APPS = base.INSTALLED_APPS + (
     'raven.contrib.django',
 )
 
